@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/BOXFoundation
+packages:
+  - language: javascript
+    registry: github
+    name: box-js
+    url: https://github.com/BOXFoundation/box-js
+    install: git clone https://github.com/BOXFoundation/box-js
+    description: ContentBox JavaScript library for interacting with the BOX (boxd) blockchain.
+    official: true
+  - language: python
+    registry: github
+    name: boxd-unpack-python
+    url: https://github.com/BOXFoundation/boxd-unpack-python
+    install: git clone https://github.com/BOXFoundation/boxd-unpack-python
+    description: Python SDK for ContentBox blockchain developers.
+    official: true
+  - language: java
+    registry: github
+    name: boxd-unpack-java
+    url: https://github.com/BOXFoundation/boxd-unpack-java
+    install: git clone https://github.com/BOXFoundation/boxd-unpack-java
+    description: Java SDK for ContentBox blockchain developers.
+    official: true
+notes: >-
+  First-party client libraries published by the ContentBox foundation GitHub
+  org (BOXFoundation). Distributed as source repositories; no first-party
+  packages were found on npm, PyPI, or Maven Central (the `box-js` name on npm
+  is an unrelated malware-analysis tool by a different author, not first-party).
