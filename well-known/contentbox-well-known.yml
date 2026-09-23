@@ -2,7 +2,11 @@ generated: '2026-07-18'
 method: searched
 source: live probe of https://contentbox.one/.well-known/
 host: https://contentbox.one
-documents:
+notes: No /.well-known/ discovery documents are published on contentbox.one. Empty result recorded as
+  an honest probe; no WellKnown/SecurityTxt pointer wired.
+hosts:
+- host: https://contentbox.one
+  documents:
   - path: /.well-known/security.txt
     status: 404
   - path: /.well-known/openid-configuration
@@ -13,6 +17,8 @@ documents:
     status: 404
   - path: /.well-known/ai-plugin.json
     status: 404
-notes: >-
-  No /.well-known/ discovery documents are published on contentbox.one. Empty
-  result recorded as an honest probe; no WellKnown/SecurityTxt pointer wired.
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
